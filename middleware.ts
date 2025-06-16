@@ -69,6 +69,11 @@ export default async function middleware(req: NextRequest) {
     hostname === "192.168.0.114:3000" ||
     hostname === process.env.NEXT_PUBLIC_ROOT_DOMAIN
   ) {
+    // Don't add /portfolio prefix if the path already starts with /portfolio
+    if (path.startsWith("/portfolio")) {
+      return NextResponse.rewrite(new URL(path, req.url));
+    }
+
     return NextResponse.rewrite(
       new URL(`/portfolio${path === "/" ? "" : path}`, req.url),
     );

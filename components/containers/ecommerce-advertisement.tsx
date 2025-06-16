@@ -29,29 +29,32 @@ const KappalECommerceAdvertisement: React.FC = () => {
       </Link>
       <Link href="https://ecommerce.kappal.in" isExternal={true}>
         <div>
-          <div className="bg-white dark:bg-black shadow-lg relative p-5 border rounded-lg border-teal-400 dark:border-lime-300 ">
+          <div className="bg-white dark:bg-black shadow-lg relative p-6 md:p-8 border rounded-lg border-teal-400 dark:border-lime-300 min-w-0 w-full max-w-md lg:max-w-lg mx-auto">
             {/* Kappal Ads Tag - Positioned Top Left */}
 
-            <div className="uppercase min-w-xs mr-5 ml-0 pt-5 text-3xl text-brandprimary dark:text-brandsecondary font-bold">
+            <div className="uppercase min-w-0 mr-0 ml-0 pt-3 text-2xl md:text-3xl text-brandprimary dark:text-brandsecondary font-bold leading-tight break-words">
               One Platform, Endless Possibilities
             </div>
-            <div className="mr-0 ml-0 uppercase text-brandsecondary dark:text-white text-xs pb-4">
+            <div className="mr-0 ml-0 uppercase text-brandsecondary dark:text-white text-xs pb-4 mt-2">
               e-commerce platform for your business
             </div>
 
             {/* Image Container */}
-            <div className="justify-start items-center flex py-5">
-              <OptimizedImage
-                alt="Kappal E-Commerce"
-                height={500}
-                quality={50}
-                src={
-                  currentTheme === "dark"
-                    ? "/images/advertisements/kappal-ecommerce-logo.png"
-                    : "/images/advertisements/kappal-ecommerce-logo-light.png"
-                }
-                width={500}
-              />
+            <div className="justify-start items-center flex py-4">
+              <div className="w-full max-w-full">
+                <OptimizedImage
+                  alt="Kappal E-Commerce"
+                  className="max-w-full h-auto"
+                  height={500}
+                  quality={50}
+                  src={
+                    currentTheme === "dark"
+                      ? "/images/advertisements/kappal-ecommerce-logo.png"
+                      : "/images/advertisements/kappal-ecommerce-logo-light.png"
+                  }
+                  width={500}
+                />
+              </div>
             </div>
           </div>
         </div>

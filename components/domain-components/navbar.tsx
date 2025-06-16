@@ -10,7 +10,6 @@ import React, { ReactNode } from "react";
 import { LargeScreenNav } from "./nav-large-screen";
 import { MobileNav } from "./nav-mobile";
 
-import { ThemeSwitch } from "@/components/theme-switch";
 import { siteConfig } from "@/config/site";
 
 interface NavbarProps {
@@ -27,7 +26,7 @@ export const Navbar: React.FC<NavbarProps> = ({ logo }) => {
 
   return (
     <HeroUINavbar
-      className="py-2 bg-gradient-to-tr bg-transparent to-purple-300 dark:bg-transparent/10 dark:to-transparent z-50"
+      className="py-4 bg-gradient-to-tr bg-transparent to-purple-300 dark:bg-transparent/10 dark:to-transparent z-50"
       isMenuOpen={isMenuOpen}
       maxWidth="2xl"
       position="sticky"
@@ -40,7 +39,7 @@ export const Navbar: React.FC<NavbarProps> = ({ logo }) => {
       </NavbarContent>
       <LargeScreenNav />
       <NavbarContent className="lg:hidden basis-1 pl-4" justify="end">
-        <ThemeSwitch />
+        {/* <ThemeSwitch /> */}
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />

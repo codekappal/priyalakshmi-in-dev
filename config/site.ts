@@ -3,12 +3,12 @@ import { HeaderNavConfig, FooterNavConfig } from "@/types/navigation";
 // Domain constants
 const DOMAINS = {
   MAIN: {
-    production: "priyalakshmi.in",
+    production: "www.priyalakshmi.in",
     local: "localhost",
     all: [] as string[],
   },
   PORTFOLIO: {
-    production: "priyalakshmi.in",
+    production: "www.priyalakshmi.in",
     local: "localhost",
     all: [] as string[],
   },
@@ -76,19 +76,19 @@ export const siteConfig = {
       visibleOnDomains: [...DOMAINS.PORTFOLIO.all],
     },
     {
-      label: "Contact",
-      key: "contact",
-      isDropDown: false,
-      isExternal: false,
-      href: "/contact",
-      visibleOnDomains: [...DOMAINS.PORTFOLIO.all],
-    },
-    {
       label: "Musings",
       key: "blogs",
       isDropDown: false,
       isExternal: false,
       href: "/blogs",
+      visibleOnDomains: [...DOMAINS.PORTFOLIO.all],
+    },
+    {
+      label: "Contact",
+      key: "contact",
+      isDropDown: false,
+      isExternal: false,
+      href: "/contact",
       visibleOnDomains: [...DOMAINS.PORTFOLIO.all],
     },
     // {
@@ -134,7 +134,7 @@ export const siteConfig = {
   ] as HeaderNavConfig,
   FooterLinks: [
     {
-      title: "Company",
+      title: "Site Links",
       visibleOnDomains: ALL_DOMAINS,
       items: [
         {
@@ -150,7 +150,7 @@ export const siteConfig = {
           visibleOnDomains: DOMAINS.MAIN.all,
         },
         {
-          label: "Press",
+          label: "Blogs",
           href: "/blogs",
           isExternal: false,
           visibleOnDomains: DOMAINS.MAIN.all,

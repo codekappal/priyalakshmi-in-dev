@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
           ))}
         </div>
         <p className="py-5 text-center text-xs md:text-sm font-extralight  text-slate-800 dark:text-slate-300">
-          &copy; {new Date().getFullYear()} Kappal Software Private Limited. All
+          &copy; {new Date().getFullYear()} Priyalakshmi.in All
           rights reserved.
         </p>
       </div>

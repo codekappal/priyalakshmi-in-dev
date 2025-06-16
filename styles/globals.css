@@ -57,4 +57,48 @@
   touch-action: manipulation;
 }
 
+/* Blog Content Overflow Prevention */
+.prose-content {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.prose-content h1,
+.prose-content h2,
+.prose-content h3,
+.prose-content h4,
+.prose-content h5,
+.prose-content h6 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.prose-content pre,
+.prose-content code {
+  overflow-x: auto;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+.prose-content table {
+  overflow-x: auto;
+  display: block;
+  white-space: nowrap;
+}
+
+/* Ensure no element causes horizontal overflow */
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Specific fixes for blog layout */
+.blog-container {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 
