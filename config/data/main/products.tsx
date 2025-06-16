@@ -1,0 +1,73 @@
+import {
+  CloudIcon,
+  DollarSignIcon,
+  TractorIcon,
+  ShoppingCartIcon,
+} from "lucide-react";
+
+export const products = [
+  {
+    id: 1,
+    description: "One Platform, Many Possibilities",
+    imageUrl: "/images/product_cards/shop_model.png",
+    href: "https://ecommerce.kappal.in",
+    hrefText: "Explore E-Commerce",
+    isExternal: true,
+    title: "Kappal E-Commerce",
+    icon: <ShoppingCartIcon className="h-6 w-6" />,
+    features: [
+      "B2B and B2C Storefront",
+      "Bundled Products",
+      "Multi-Channel Sales",
+      "Multi-Region and Currency",
+    ],
+  },
+  {
+    id: 2,
+    description: "Farm Management Solutions",
+    imageUrl: "/images/product_cards/farm.svg",
+    href: "https://farm.kappal.in",
+    isExternal: true,
+    hrefText: "Explore Farm Apps",
+    title: "Kappal Agri-Tech",
+    icon: <TractorIcon className="h-6 w-6" />,
+    features: [
+      "Crop planning",
+      "Inventory management",
+      "Precision farming",
+      "Profit tracking",
+    ],
+  },
+  {
+    id: 3,
+    description: "Reach your potential customers faster",
+    imageUrl: "/images/product_cards/ad_model.png",
+    href: "https://ads.kappal.in",
+    isExternal: true,
+    hrefText: "Expore Ads",
+    title: "Kappal Ads",
+    icon: <DollarSignIcon className="h-6 w-6" />,
+    features: [
+      "Predictable Pricing",
+      "Audience targeting",
+      "Cost Effective",
+      "High Impact Placements",
+    ],
+  },
+  {
+    id: 4,
+    description: "Reliable App Hosting Services",
+    imageUrl: "/images/product_cards/server_model.png",
+    href: "https://cloud.kappal.in",
+    isExternal: true,
+    hrefText: "Explore Cloud",
+    title: "Kappal Cloud",
+    icon: <CloudIcon className="h-6 w-6" />,
+    features: [
+      "Managed App Solutions",
+      "Backup solutions",
+      "Compute instances",
+      "API hosting",
+    ],
+  },
+];

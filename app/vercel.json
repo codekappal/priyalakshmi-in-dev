@@ -1,0 +1,20 @@
+{
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/(main)/$1",
+        "has": [{ "type": "host", "value": "priyalakshmi.in" }]
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/(photography)/$1",
+        "has": [{ "type": "host", "value": "photography.priyalakshmi.in" }]
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/(store)/$1",
+        "has": [{ "type": "host", "value": "store.priyalakshmi.in" }]
+      }
+    ]
+  }
+  

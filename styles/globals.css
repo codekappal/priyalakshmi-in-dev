@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* styles/globals.css */
+.bg-gradient-container {
+    /* @apply bg-gradient-to-r from-indigo-400/80 via-purple-400/80 to-pink-400/50 dark:bg-black/50 ; */
+    @apply transition-transform duration-300 hover:scale-100 hover:shadow-lg dark:shadow-slate-800 bg-gradient-to-t from-violet-400 via-indigo-400 to-blue-400 dark:bg-gradient-to-br dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 p-6 rounded-lg
+  }
+.bg-transparent-container {
+   @apply transition-transform duration-300 hover:scale-105 hover:shadow-lg dark:shadow-slate-800 bg-gradient-to-bl from-slate-100/80 via-white/80 to-transparent dark:bg-gradient-to-br dark:from-gray-900/80 dark:via-black dark:to-transparent dark:border-gray-800 border p-6 rounded-lg
+}
+.text-marker {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.text-marker::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(/images/common/marker-yellow.svg) repeat-x bottom; /* s2.svgbox.net/pen-brushes.svg?ic=brush-5&color=F2C230 <- change the image here */
+  opacity: .9; /* <- control just the marker's opacity */
+  z-index: -1;
+}
+
+/* Mobile Navigation Fixes */
+.mobile-nav-accordion {
+  contain: layout style;
+}
+
+.mobile-nav-accordion [data-accordion-item] {
+  position: relative;
+  isolation: isolate;
+  transform: translateZ(0);
+}
+
+.mobile-nav-accordion [data-accordion-item] [data-accordion-trigger] {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.mobile-nav-accordion [data-accordion-item] [data-accordion-content] {
+  position: relative;
+  z-index: 5;
+  isolation: isolate;
+}
+
+.mobile-nav-accordion [data-accordion-item] [data-accordion-content] a {
+  position: relative;
+  z-index: 15;
+  pointer-events: auto;
+  display: block;
+  touch-action: manipulation;
+}
+
+
