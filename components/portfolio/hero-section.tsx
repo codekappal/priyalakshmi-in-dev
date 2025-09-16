@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "@heroui/button";
 import { Link } from "@heroui/link";
-import { Download, Mail, Linkedin, MessageCircle } from "lucide-react";
+import { Mail, Linkedin, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 import OptimizedImage from "../common/ui/optimized-images";
@@ -63,69 +63,18 @@ export const HeroSection = () => {
                 Talent Acquisition Leader
               </h1>
               <h2 className="text-2xl lg:text-3xl text-gray-300 font-light font-handwritten">
-                Transforming Careers,{" "}
                 <span className="text-lime-400 font-semibold">
-                  Building Teams
+                  HR, is my calling!
                 </span>
               </h2>
             </div>
 
-            {/* Description */}
-            <p className="text-2xl text-gray-400 leading-relaxed max-w-2xl font-handwritten">
-              I am an expert in SaaS & FinTech recruitment. Welcome to my page.
-            </p>
-
-            {/* Key Stats */}
-            <div className="grid grid-cols-3 gap-6 py-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-lime-400">11+</div>
-                <div className="text-sm text-gray-500">Years Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-lime-400">500+</div>
-                <div className="text-sm text-gray-500">Lives Impacted</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-lime-400">4+</div>
-                <div className="text-sm text-gray-500">Years Mentoring</div>
-              </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                as={Link}
-                className="bg-lime-500 text-black hover:bg-lime-400 font-semibold px-8 py-6 text-lg"
-                href="#contact"
-                size="lg"
-              >
-                <MessageCircle className="h-5 w-5 mr-2" />
-                Let&apos;s Connect
-              </Button>
-
-              <Button
-                as={Link}
-                className="border-2 border-lime-500/30 text-lime-400 hover:bg-lime-500/10 px-8 py-6 text-lg"
-                href="/resume.pdf"
-                size="lg"
-                variant="ghost"
-              >
-                <Download className="h-5 w-5 mr-2" />
-                Download Resume
-              </Button>
-            </div>
-
             {/* Social Links */}
             <div className="flex gap-6 pt-4">
+            
               <Link
                 className="text-gray-400 hover:text-lime-400 transition-colors"
-                href="mailto:priyalakshmi@example.com"
-              >
-                <Mail className="h-6 w-6" />
-              </Link>
-              <Link
-                className="text-gray-400 hover:text-lime-400 transition-colors"
-                href="https://linkedin.com/in/priyalakshmi"
+                href="https://linkedin.com/in/priyalakshmi-r"
               >
                 <Linkedin className="h-6 w-6" />
               </Link>

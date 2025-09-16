@@ -60,22 +60,6 @@ export const siteConfig = {
       visibleOnDomains: [...DOMAINS.PORTFOLIO.all],
     },
     {
-      label: "Experience",
-      key: "experience",
-      isDropDown: false,
-      isExternal: false,
-      href: "/experience",
-      visibleOnDomains: [...DOMAINS.PORTFOLIO.all],
-    },
-    {
-      label: "Services",
-      key: "services",
-      isDropDown: false,
-      isExternal: false,
-      href: "/services",
-      visibleOnDomains: [...DOMAINS.PORTFOLIO.all],
-    },
-    {
       label: "Musings",
       key: "blogs",
       isDropDown: false,

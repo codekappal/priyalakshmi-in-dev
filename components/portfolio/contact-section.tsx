@@ -31,8 +31,8 @@ const contactMethods = [
     icon: <Linkedin className="h-6 w-6" />,
     title: "LinkedIn",
     description: "Connect professionally",
-    contact: "linkedin.com/in/priyalakshmi",
-    href: "https://linkedin.com/in/priyalakshmi",
+    contact: "linkedin.com/in/priyalakshmi-r",
+    href: "https://linkedin.com/in/priyalakshmi-r",
   },
   {
     icon: <MapPin className="h-6 w-6" />,
@@ -291,7 +291,7 @@ export const ContactSection = () => {
             <Button
               as="a"
               className="border-2 border-lime-500/30 text-lime-400 hover:bg-lime-500/10 px-8 py-6 text-lg"
-              href="https://linkedin.com/in/priyalakshmi"
+              href="https://linkedin.com/in/priyalakshmi-r"
               size="lg"
               target="_blank"
               variant="ghost"

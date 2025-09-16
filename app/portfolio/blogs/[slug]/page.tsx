@@ -112,11 +112,11 @@ export default async function Blog({ params }) {
               <h1 className="title font-bold text-2xl lg:text-4xl tracking-tighter text-gray-900 dark:text-white mb-4 break-words">
                 {post.metadata.title}
               </h1>
-              <div className="flex justify-between items-center text-sm lg:text-base">
+              {/* <div className="flex justify-between items-center text-sm lg:text-base">
                 <p className="text-neutral-600 dark:text-neutral-400 font-normal">
                   {formatDate(post.metadata.publishedAt)}
                 </p>
-              </div>
+              </div> */}
             </div>
             <div className="prose-content text-gray-700 dark:text-gray-300 leading-relaxed break-words overflow-wrap-anywhere">
               <CustomMDX 

@@ -32,3 +32,10 @@ export const DomainLinks = {
     },
   },
 };
+
+// Professional Experience Data
+export const ProfessionalData = {
+  careerStartYear: 2013,
+  getExperienceYears: () => new Date().getFullYear() - 2013,
+  getMentoringYears: () => new Date().getFullYear() - 2021, // Started mentoring in 2021
+};

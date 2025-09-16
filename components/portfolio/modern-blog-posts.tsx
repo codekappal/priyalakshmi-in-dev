@@ -133,21 +133,7 @@ export function ModernPortfolioBlogPosts({
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Header Section */}
-        <motion.div
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h1 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent mb-4">
-            Latest Insights
-          </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Explore our collection of articles on HR innovation, talent
-            strategy, and business transformation
-          </p>
-        </motion.div>
+       
 
         {/* Controls Bar */}
         <motion.div

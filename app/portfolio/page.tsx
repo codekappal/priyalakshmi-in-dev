@@ -29,8 +29,7 @@ export default function PortfolioHome() {
       <HeroSection />
       {/* Blog Highlights */}
       <BlogSection blogPosts={blogPosts} />
-      {/* Core Expertise */}
-      <ExpertiseSection />
+      
     </main>
   );
 }

@@ -14,10 +14,11 @@ export default function ContactPage() {
             Let&apos;s Connect
           </h1>
 
-          <p className="text-xl text-gray-400 text-center mb-16 max-w-3xl mx-auto">
-            Open to conversations about anything related to Human Resources –
-            whether it&apos;s recruitment strategies, team building, process
-            optimization, or mentoring and development.
+          <p className="text-2xl text-gray-200 leading-relaxed w-full text-center font-handwritte nmb-16 max-w-3xl mx-auto">
+            I am open to conversations about anything related to Human Resources
+            – be it recruitment practices & strategies, onboarding, candidate
+            experience, team building, process optimization, or mentoring. Lets
+            speak !
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -29,25 +30,11 @@ export default function ContactPage() {
 
               {[
                 {
-                  icon: "📧",
-                  title: "Email",
-                  description: "Drop me a line anytime",
-                  contact: "priyalakshmi@example.com",
-                  href: "mailto:priyalakshmi@example.com",
-                },
-                {
-                  icon: "📱",
-                  title: "Phone",
-                  description: "Let's have a conversation",
-                  contact: "+91 98765 43210",
-                  href: "tel:+919876543210",
-                },
-                {
-                  icon: "💼",
+                  icon: "",
                   title: "LinkedIn",
                   description: "Connect professionally",
-                  contact: "linkedin.com/in/priyalakshmi",
-                  href: "https://linkedin.com/in/priyalakshmi",
+                  contact: "linkedin.com/in/priyalakshmi-r",
+                  href: "https://linkedin.com/in/priyalakshmi-r",
                 },
                 {
                   icon: "📍",

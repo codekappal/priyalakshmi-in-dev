@@ -114,16 +114,6 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ blogPosts }) => {
             </span>
           </motion.h2>
 
-          <motion.p
-            animate={{ opacity: 1, y: 0 }}
-            className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed"
-            initial={{ opacity: 0, y: 20 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-          >
-            Exploring the intersection of talent acquisition, technology, and
-            business strategy through real-world experiences and practical
-            insights.
-          </motion.p>
         </motion.div>
 
         {/* Blog Posts Grid */}
