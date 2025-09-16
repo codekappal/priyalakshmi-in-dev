@@ -4,7 +4,7 @@ export const baseUrl = process.env.BASE_URL || "https://priyalakshmi.in";
 
 export default async function sitemap() {
   let blogs = getBlogPosts().map((post) => ({
-    url: `${baseUrl}/blogs/${post.slug}`,
+    url: `${baseUrl}/portfolio/blogs/${post.slug}`,
     lastModified: post.metadata.publishedAt,
   }));
 
@@ -13,7 +13,7 @@ export default async function sitemap() {
     lastModified: job.metadata.publishedAt,
   }));
 
-  let routes = ["", "/blogs", "/careers"].map((route) => ({
+  let routes = ["", "/portfolio/blogs", "/careers"].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split("T")[0],
   }));

@@ -21,7 +21,7 @@ export function BlogPosts() {
           <FullWidthCard
             key={post.slug}
             description={post.metadata.summary}
-            href={`/blogs/${post.slug}`}
+            href={`/portfolio/blogs/${post.slug}`}
             title={post.metadata.title}
           />
         ))}
