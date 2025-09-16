@@ -17,7 +17,7 @@ export const HeroSection = () => {
             fill
             priority
             alt="Priyalakshmi - Talent Acquisition Leader"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-contain object-center"
             src="/images/common/priya-hero.png"
           />
           {/* Gradient overlay to blend with the background */}
